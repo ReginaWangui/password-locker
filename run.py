@@ -1,0 +1,6 @@
+class user :
+    ...
+    class that generate new  instance of user
+    ...
+
+    ;
