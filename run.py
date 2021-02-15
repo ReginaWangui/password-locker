@@ -1,16 +1,76 @@
+#!/usr/bin/env python3.8
+
 import os
 from credential import Credential
 from user import User
+from PassWordGenerator import PassWordGenerator
 import random
 
+# def create_credentials(first_name, last_name, user_email):
+#     '''
+#     A function that creates a new users credentials
+#     '''
+
+#     new_user_credential = Credential(first_name, last_name, user_email,)
+#     return new_user_credential
+
+# def create_user_account(first_name, last_name, user_name, user_email, user_password):
+#     '''
+#     Function that creates a new user account
+#     '''
+#     new_user_account = User(first_name, last_name, user_name, user_email, user_password)
+#     return new_user_account
+
+# def save_credential(credential):
+#     '''
+#     A function that saves the new users credentials
+#     '''
+#     credential.save_credential()
+
+# def save_user_account(user):
+#     '''
+#     A function that saves the new users account details
+#     '''
+#     user.save_user_account()
+
+# def delete_credential(credential):
+#     '''
+#     A function that deletes the new user's credentials
+#     '''
+#     credential.delete_credential()
+
+# def search_user_email(credential):
+#     '''
+#     A function that searches for a user's credentials
+#     '''
+#     credential.search_user_email()
+
+# def credential_exist(credential):
+#     '''
+#     A function that checks if the credentials of the email being searched for exists
+#     '''
+#     credential.credential_exist()
+
+# def display_credential(credential):
+#     '''
+#      display_credential this method that retuns the list of credential_list
+#      '''
+#     credential.display_credential()
+
+# def display_user_account(user):
+#     '''
+#     A function that displays the user's account 
+#     '''
+#     user.display_user_account()
+
 def main():
-    print("Hello!! welcome PassLock Credentials Check. Enter User First Name.")
+    print("Hi,Hello!! Welcome PassLock Credentials Check. Enter User First Name.")
     first_name = input()
 
-    print(f"firstName {first_name} you're a step into PassLock. Please enter your last name.")
+    print(f"Hey {first_name} you're a step into PassLock. Please enter your last name.")
     last_name = input()
 
-    print(f"LastName {first_name} {last_name} input your credential user email ")
+    print(f"Hey {first_name} {last_name} input your credential user email ")
     user_email = input()
 
     user_in = int(input("Reply with 1 to enter password or 2 to generate a new password for you"))
@@ -79,7 +139,7 @@ def main():
                     print("account does not exist")
         elif short_code == "ex":
             account_user.logout()
-            print("PASSLOCK BIDS ...COME BACK AGAIN")
+            print("PASSLOCK BIDS BYE....THANK YOU FOR VISITING")
             break
         elif short_code == 'va':
             while 1:
