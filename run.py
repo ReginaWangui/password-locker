@@ -3,7 +3,7 @@
 import os
 from credential import Credential
 from user import User
-from PassWordGenerator import PassWordGenerator
+# from PassWordGenerator import PassWordGenerator
 import random
 
 # def create_credentials(first_name, last_name, user_email):
